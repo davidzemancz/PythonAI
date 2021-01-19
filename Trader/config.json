@@ -1,0 +1,9 @@
+{
+  "test": 1,
+
+  "login": {
+    "none": "DO NOT FORGOT TO CHANGE 'test' VALUE !!!",
+    "api_key": "qjrgb4Q72scSGVlLywL8TS9mgtrhPt1i6Dujb4HGnTXG0ernBvBDuvEnC8FEABvZ",
+    "secret_key": "XIvkjXx4fdBMVYvyxJ12EsawrI2jMpiOjSgOG2lnYNIuWNS4yQ8rO9WnK2NFdTBD"
+  }
+}
