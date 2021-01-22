@@ -7,6 +7,8 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "AITester", "AITester\AITest
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Trader", "Trader\Trader.pyproj", "{D86F5769-DCA3-4696-8800-D89813F1129E}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "AIFromScratch", "AIFromScratch\AIFromScratch.pyproj", "{D991B2E7-5B93-4F1C-8258-C2AEE1DEFBE5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,8 @@ Global
 		{71294B86-63F9-44A3-9430-C94A2444A70A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D86F5769-DCA3-4696-8800-D89813F1129E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D86F5769-DCA3-4696-8800-D89813F1129E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D991B2E7-5B93-4F1C-8258-C2AEE1DEFBE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D991B2E7-5B93-4F1C-8258-C2AEE1DEFBE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -49,6 +49,22 @@ class NeuralNetwork:
             sum += (arr_true[i] - arr_pred[i])**2
         return 1/sum
 
+    def mse_derivative(self, arr_true, arr_pred):
+        """
+        Mean squared loss - Střední kvadratická chyba
+        """
+        n = len(arr_true)
+        sum = 0
+        for i in range(n):
+            sum += 2*(arr_true[i] - arr_pred[i])
+        return 1/sum
+
+    def mse(y, y_pred):    
+        return np.mean(np.power(y - y_pred, 2))
+
+    def mse_prime(y, y_pred):
+        return 2 * (y_pred - y) / y.size
+
 
 nn = NeuralNetwork()
 
