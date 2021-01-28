@@ -25,10 +25,10 @@
     <Compile Include="Layer.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Loss.py">
+    <Compile Include="Main.py" />
+    <Compile Include="Neuron.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Main.py" />
     <Compile Include="Test_1.py">
       <SubType>Code</SubType>
     </Compile>

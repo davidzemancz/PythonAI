@@ -1,13 +1,27 @@
 from Layer import Layer
-import Loss
 import numpy as np
 
-# Vstup
-input = np.array([0.3, 0.2, -0.7, 0.4]) 
 
-weights_1 = np.array([[1, 1, 1, 1], [-0.5, -0.3, 0.7, 0.2]])
-biases_1 = np.array([0, 0]) 
-layer_1 = Layer(weights_1, biases_1)
-print(layer_1.feed(input))
+hidden_layer = Layer([[0.5, 0.5],[0.5, 0.5],[0.5, 0.7]],[0, 1, 0])
+output_layer = Layer([[0.5, 0.4, 0.2],[0.7, 0.1, 0.5]],[0, 1])
+
+x_1 = 0.7
+x_2 = 0.2
+input = np.array([x_1, x_2])
+
+for i in range(100):
+    hidden_layer_output = hidden_layer.feed_forward(input)
+    output = output_layer.feed_forward(hidden_layer_output)
+
+    print(output)
+
+    expected = [1, 0]
+    output_layer.feed_backwards(expected)
+    hidden_layer.feed_backwards(expected, output_layer)
+
+    hidden_layer.push()
+    output_layer.push()
+
+
 
 
