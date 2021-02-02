@@ -46,13 +46,15 @@ class Layer:
                         sum += weight_prev * self.sigmoid_deriv(self.output[row_2]) * 2 * (self.output[row_2] - expected[row_2])
                     
                     result = self.input[col] * self.sigmoid_deriv(self.output[row]) * sum
+                    result_b = self.input[col] * self.sigmoid_deriv(self.output[row]) * sum
                     
                 else:
                     result = self.input[col] * self.sigmoid_deriv(self.output[row]) * 2 * (self.output[row] - expected[row])
+                    result_b = self.sigmoid_deriv(self.output[row]) * 2 * (self.output[row] - expected[row])
                 
                 self.weights_new[row][col] = self.weights_new[row][col] - self.learing_rate * result
                 
-                self.biases_new[row] = self.biases_new[row] - self.learing_rate * result
+                self.biases_new[row] = self.biases_new[row] - self.learing_rate * result_b
 
     
     def push(self):
