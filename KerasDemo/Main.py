@@ -1,2 +1,2 @@
-#import mnist
+#import Digits
 import Imdb

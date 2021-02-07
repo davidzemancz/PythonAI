@@ -29,7 +29,7 @@
     <Compile Include="Main.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mnist.py">
+    <Compile Include="Digits.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
